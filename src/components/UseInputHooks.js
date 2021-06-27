@@ -27,7 +27,7 @@ const UseInputHooks = () => {
 
   return (
     <div>
-      <h1>여기는 useInput 구역</h1>
+      <h1>여기는 useInput 구역 (UseState 사용)</h1>
       <input placeholder="Name" {...name} />{" "}
       {/*...은 스프레드 연산자
       value ={name.value onChange={name.onChange}와 같은 의미*/}

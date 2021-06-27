@@ -28,10 +28,11 @@ const UseTabHooks = () => {
 
   return (
     <div>
-      <h1>UseTab 구역입니다.</h1>
+      <h1>UseTab 구역입니다.(UseState 사용)</h1>
       {contents.map((section, index) => (
         <button onClick={() => changeItem(index)}>{section.tab}</button>
       ))}
+      {/*Link랑 Button때문에 콘솔에러뜨는갓 */}
       <div>{currentItem.content}</div>
     </div>
   );

@@ -1,0 +1,4 @@
+useEffect는
+componentWillUnmount,
+componentDidmount,
+componentWillUpdate 와 비슷함
