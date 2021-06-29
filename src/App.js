@@ -7,6 +7,7 @@ import UseTitleHooks from "./components/UseTitleHooks";
 import UseClickHooks from "./components/UseClickHooks";
 import UseConfirmHooks from "./components/UseConfirmHooks";
 import UsePreventLeave from "./components/UsePreventLeave";
+import UseBeforeLeave from "./components/UseBeforeLeave";
 
 const App = () => {
   return (
@@ -33,6 +34,9 @@ const App = () => {
         <li>
           <Link to="/usepreventleave">UsePreventLeave</Link>
         </li>
+        <li>
+          <Link to="/usebeforeleave">useBeforeLeave</Link>
+        </li>
       </ul>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -42,6 +46,7 @@ const App = () => {
         <Route exact path="/useclickhooks" component={UseClickHooks} />
         <Route exact path="/useconfirmhooks" component={UseConfirmHooks} />
         <Route exact path="/usepreventleave" component={UsePreventLeave} />
+        <Route exact path="/usebeforeleave" component={UseBeforeLeave} />
       </Switch>
     </div>
   );
