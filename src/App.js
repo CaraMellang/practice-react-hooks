@@ -5,6 +5,8 @@ import Home from "./components/Home";
 import UseTabHooks from "./components/UseTabHooks";
 import UseTitleHooks from "./components/UseTitleHooks";
 import UseClickHooks from "./components/UseClickHooks";
+import UseConfirmHooks from "./components/UseConfirmHooks";
+import UsePreventLeave from "./components/UsePreventLeave";
 
 const App = () => {
   return (
@@ -25,6 +27,12 @@ const App = () => {
         <li>
           <Link to="/useclickhooks">UseClick</Link>
         </li>
+        <li>
+          <Link to="/useconfirmhooks">UseConfirm</Link>
+        </li>
+        <li>
+          <Link to="/usepreventleave">UsePreventLeave</Link>
+        </li>
       </ul>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -32,6 +40,8 @@ const App = () => {
         <Route exact path="/usetabhooks" component={UseTabHooks} />
         <Route exact path="/usetitlehooks" component={UseTitleHooks} />
         <Route exact path="/useclickhooks" component={UseClickHooks} />
+        <Route exact path="/useconfirmhooks" component={UseConfirmHooks} />
+        <Route exact path="/usepreventleave" component={UsePreventLeave} />
       </Switch>
     </div>
   );

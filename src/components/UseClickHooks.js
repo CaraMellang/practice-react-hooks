@@ -5,12 +5,18 @@ const useClick = (onClick) => {
   useEffect(() => {
     if (element.current) {
       element.current.addEventListener("click", onClick);
+      console.log(
+        "이거 호출함! 마운트될때 바로 실행되는듯 그래서 이 span을 클릭할수 있는것 같아!"
+      );
     }
     return () => {
       //return은 componentUnMount용도
       //useEffect의 return값은 해당 effect가 더이상 실행필요가 없을때 청소하는 용도
       if (element.current) {
         element.current.removeEventListener("click", onClick);
+        console.log(
+          " 리렌더링 하니까 언마운트 실행되는듯! 아닌가? 언마운트 친구 한박자씩 느리네 머징"
+        );
       }
     };
   }, []); //unmount하게 하려면 빈 배열로 넘겨야함
