@@ -8,6 +8,10 @@ import UseClickHooks from "./components/UseClickHooks";
 import UseConfirmHooks from "./components/UseConfirmHooks";
 import UsePreventLeave from "./components/UsePreventLeave";
 import UseBeforeLeave from "./components/UseBeforeLeave";
+import UseFadeIn from "./components/UseFadeIn";
+import UseNetwork from "./components/UseNetwork";
+import UseScroll from "./components/UseScroll";
+import UseFullscreen from "./components/UseFullscreen";
 
 const App = () => {
   return (
@@ -37,6 +41,18 @@ const App = () => {
         <li>
           <Link to="/usebeforeleave">useBeforeLeave</Link>
         </li>
+        <li>
+          <Link to="/usefadein">useFadeIn</Link>
+        </li>
+        <li>
+          <Link to="/usenetwork">useNetwork</Link>
+        </li>
+        <li>
+          <Link to="/usescroll">useScroll</Link>
+        </li>
+        <li>
+          <Link to="/usefullscreen">useFullscreen</Link>
+        </li>
       </ul>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -47,6 +63,10 @@ const App = () => {
         <Route exact path="/useconfirmhooks" component={UseConfirmHooks} />
         <Route exact path="/usepreventleave" component={UsePreventLeave} />
         <Route exact path="/usebeforeleave" component={UseBeforeLeave} />
+        <Route exact path="/usefadein" component={UseFadeIn} />
+        <Route exact path="/usenetwork" component={UseNetwork} />
+        <Route exact path="/usescroll" component={UseScroll} />
+        <Route exact path="/usefullscreen" component={UseFullscreen} />
       </Switch>
     </div>
   );
