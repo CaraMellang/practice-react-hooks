@@ -12,6 +12,7 @@ import UseFadeIn from "./components/UseFadeIn";
 import UseNetwork from "./components/UseNetwork";
 import UseScroll from "./components/UseScroll";
 import UseFullscreen from "./components/UseFullscreen";
+import UseNotification from "./components/UseNotification";
 
 const App = () => {
   return (
@@ -53,6 +54,9 @@ const App = () => {
         <li>
           <Link to="/usefullscreen">useFullscreen</Link>
         </li>
+        <li>
+          <Link to="/usenotification">useNotification</Link>
+        </li>
       </ul>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -67,6 +71,7 @@ const App = () => {
         <Route exact path="/usenetwork" component={UseNetwork} />
         <Route exact path="/usescroll" component={UseScroll} />
         <Route exact path="/usefullscreen" component={UseFullscreen} />
+        <Route exact path="/usenotification" component={UseNotification} />
       </Switch>
     </div>
   );
