@@ -13,6 +13,7 @@ import UseNetwork from "./components/UseNetwork";
 import UseScroll from "./components/UseScroll";
 import UseFullscreen from "./components/UseFullscreen";
 import UseNotification from "./components/UseNotification";
+import UseAxiosPage from "./components/useAxios/UseAxiosPage";
 
 const App = () => {
   return (
@@ -57,6 +58,9 @@ const App = () => {
         <li>
           <Link to="/usenotification">useNotification</Link>
         </li>
+        <li>
+          <Link to="/useaxios">useAxios</Link>
+        </li>
       </ul>
       <Switch>
         <Route exact path="/" component={Home} />
@@ -72,6 +76,7 @@ const App = () => {
         <Route exact path="/usescroll" component={UseScroll} />
         <Route exact path="/usefullscreen" component={UseFullscreen} />
         <Route exact path="/usenotification" component={UseNotification} />
+        <Route exact path="/useaxios" component={UseAxiosPage} />
       </Switch>
     </div>
   );
